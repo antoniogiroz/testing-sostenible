@@ -1,0 +1,20 @@
+{
+  "name": "only-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/app.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "node lib/app.js",
+    "compile": "tsc -b",
+    "compile:watch": "tsc -b --watch",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.9",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.1",
+    "typescript": "5.3.2"
+  }
+}
