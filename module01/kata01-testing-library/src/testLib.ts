@@ -4,18 +4,18 @@ export function expect<T>(expected: T) {
       if (actual !== expected) {
         throw new Error(`\tExpected ${expected}, but got ${actual}`);
       }
-    }
-  }
+    },
+  };
 }
 
 export async function test(description: string, callback: () => void) {
   try {
     await callback();
-    console.log(`✅ ${description}`); 
+    console.log(`✅ ${description}`);
   } catch (error) {
     console.log(`❌ ${description}`);
     console.log(error.message);
-  }    
+  }
 }
 
 export const it = test;

@@ -1,4 +1,4 @@
-import * as stats from "./stats";
+import * as stats from './stats';
 
 export function sum(numbers: number[]) {
   return Promise.resolve(stats.sum(numbers));
